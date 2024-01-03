@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Data Analysis</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- styles css -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-center">
+          <!--links-->
+          <div>
+            <button class="toggle-nav">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+              <li>
+                <a class="nav-link" href="index.html">home</a>
+              </li>
+             <li>
+                <a class="nav-link" href="motivation.html">Motivation</a>
+              </li>
+                          <li>
+                <a class="nav-link" href="about.html">about</a>
+              </li>
+            </ul>
+          </div>
+          <!--logo-->
+
+        </div>
+      </div>
+
+      <div class="sidebar-overlay">
+        <aside class="sidebar">
+          <button class="sidebar-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="sidebar-links">
+            <li>
+              <a href="index.html" class="sidebar-link">
+                <i class="fas fa-home fa-fw">home</i>
+              </a>
+            </li>
+            <li>
+              <a href="motivation.html" class="sidebar-link">
+                <i class="fas fa-bullhorn fa-fw">Motivation</i>
+
+              </a>
+            </li>
+                      <li>
+              <a href="about.html" class="sidebar-link">
+                <i class="fas fa-book fa-fw">about</i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+
+      <div class="opening-line">
+        <div class="asansor">
+            <h1 class="baslik"><strong>How</strong> does university effect an individuals health?</h1> 
+            <h3 class="sub">Many people agree that university is essential for an individual's future and career but may have disregarded the issue of well-being. In this project I will analyze my health data to prove that university effects my health in a harmful way.</h3>
+        </div>
+         
+            <img class="img" src="./images/Struggle.png" height="400px" width="auto%">     
+    </div>
+
+
+
+      <div class="containers">
+        <h1>Results</h1>
+        <hr class="line">
+        <div class="row">
+            <a href="#steps">
+                <div class="service">
+                    <i class="fas fa-walking"></i>
+    
+                    <h2>Walking Distance</h2>
+                    <p>One of the parameters I am going to take account is walking distance or stepcount lets see how does school effect it.</p>
+                </div>
+            </a>
+            <a href="#audio">
+                <div class="service">
+                    <i class="fas fa-heartbeat"></i>
+    
+                    <h2>Hearing</h2>
+                    <p>The usage of headphones effects an individual badly in most cases lets see what is my score. Keep in my mind that an individuals monthly usage should be about 216000 seconds.</p>
+                </div>
+            </a>
+            <a href="#calory">
+                <div class="service">
+                    <i class="fas fa-bullhorn fa-fw"></i>
+    
+                    <h2>Calories Burned</h2>
+                    <p>Lets see how did school effect the calories I burned during the calender year.</p>
+                </div>
+            </a>
+        <a href="#ML">
+          <div class="service">
+              <i class="fas fa-bullhorn fa-fw"></i>
+
+              <h2>ML Model</h2>
+              <p>I have trained an ML model to show the correlations and also to classify whether a given day is an school day or not. Click here to see the results.</p>
+          </div>
+      </a>
+        </div>
+      </div>
+
+      <h1 class="page-title" id="steps">Step Count Analysis</h1>
+
+
+
+
+
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-11 132644.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">Lets Explore my Step Count</p>
+          <p class="graph-description">As you can see here It is an highly diverse graph however it does have an certain pattern. In the begining of the year It starts high then it dips to the lowest point and then it rises to its highest point and then it drops yet again. This pattern is usually the semester holiday then spring term after that summer vacation . </p>
+        </div>
+      </div>
+      <div class="graph-container">
+        <div class="graph-info">
+          <img src="./images/2016.png" alt="img" 
+          width="80%" height="400px">
+          <p class="graph-title">Lets Explore my Step Count based on years</p>
+          <p>In 2016 data we can see that there is not much of an difference between school and holiday months this is because the workload hasn't started yet.</p>
+        </div>
+      </div>
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-11 132712.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">Lets Explore my Step Count Based on Months</p>
+          <p class="graph-description">Now we can see mych clearer pattern for the months the top 5 consist of all summer months and september which in my university is considered in the holiday. We also notice smething strange in spring months the top 5 lowest consists all of them which is starnge because in terms of weather it is one of the best times to go out.</p>
+        </div>
+      </div>
+
+      <div class="mycontainer">
+        <iframe src="interactive_plot.html" width="100%" height="500px" frameborder="0"></iframe>
+        <div class="graph-content">
+          <p class="graph-title">Lets Explore my Step Count</p>
+          <p class="graph-description">If you play around with this heatmap for some time you are going to recognise that the month of August has the darkest palette of blue with July and months like may and april having the lightest which just proves my point above.</p>
+        </div>
+      </div>
+
+
+      <h1 class="page-title" id="audio">Ear Damage Analysis</h1>
+   
+      
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-11 132912.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">Lets Explore my Headphone Data</p>
+          <p class="graph-description">As we can see the box is set up at between 50000-100000 and 100000-150000 range so fifty percent of the time my duration was here which is good because for an individual average is higher than my data. There are also a few exception where I was above it as well you can see by the dot in the graph. And the graph extends on the upper quartile so there is more distribution there due to it having more x values and the line being longer than lowe quartile line. </p>
+        </div>
+      </div>
+      
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-11 133000.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">Lets Explore my Headphone Data by Month and Year</p>
+          <p class="graph-description">The thing we notice is here is that during the summer time. I use headphones alot and also during spring so this would mean that at least from this graphic school does not play a huge role in terms of this parameter.</p>
+        </div>
+      </div>
+
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-11 133135.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">Lets Explore my Headphone Data by Month and Year</p>
+          <p class="graph-description">We couldn't get much of an result previously so lets try again with an different graph. This time the values peak during the spring time which would mean that during schooltime I use my headphones way more than I supposed for an healhty individual.</p>
+        </div>
+      </div>
+
+
+      <h1 class="page-title" id="calory">Caloric Analysis</h1>
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-30 142926.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">Lets Explore my Caloric Data</p>
+          <p class="graph-description">From this graph we can see that the median is between 200-400 the interquantile range is also between 200-400 there is an really have distribution in this range. Also the maximum is really high there are too many exceptions especially going over</p>
+        </div>
+      </div>
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-30 143123.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">Analysis of Caloric Data</p>
+          <p class="graph-description">As we can see from the highest generally occur during summer and the frequency of lowest is highest during spring indicating that spring is time where my activeness is at its lowest.</p>
+        </div>
+      </div>
+
+
+      <h1 class="page-title" id="ML">ML Model</h1>
+
+      <div class="mycontainer">
+        <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-30 100002.png" alt="Graph Image">
+        <div class="graph-content">
+          <p class="graph-title">The Dataset for the Model</p>
+          <p class="graph-description">The dataframe is fairly simple. I have added my calories data and my stepcount data together with my months and days. Also with the helpof my months and days I identified the school days and marked the days I do not have school as 1.</p>
+        </div>
+        <div class="mycontainer">
+          <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-30 101728.png" alt="Graph Image">
+          <div class="graph-content">
+            <p class="graph-title">Logistic Regression</p>
+            <p class="graph-description">In order make an decisive analysis of the data. I made an logistic regression for school days because the values were either 1 or 0. As we can see from the graph the places where step count is over 10000 is generally classified as non school days so it is proving my point. The values where both calories burned and step count high are not school days however days where my calories burned is high and stepcount is low are school days. </p>
+          </div>
+        </div>
+        <div class="mycontainer">
+          <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-30 100203.png" alt="Graph Image">
+          <div class="graph-content">
+            <p class="graph-title">Correlations</p>
+            <p class="graph-description">In the correlations heatmap we see these results again. School is highly correlated with the amount of steps I take in a day. We see here again that I am more active during non school days. Also I wanted to put months and days here just to see how they effect my step count. They are both positively correlated especially month but not that highly correlated and result with calories burned is expected because the more you burn calories means that you walked more.</p>
+          </div>
+        </div>
+
+        <div class="mycontainer">
+          <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-30 100240.png" alt="Graph Image">
+          <div class="graph-content">
+            <p class="graph-title">Confusion Matrix</p>
+            <p class="graph-description">I wanted to see which days are confused with which and it seems that non school days are confused with school days the most and school days are nearly never confused with non school days which is really interesting.</p>
+          </div>
+        </div>
+
+        <div class="mycontainer">
+          <img class="graph-image" src="./images/Ekran görüntüsü 2023-12-30 100309.png" alt="Graph Image">
+          <div class="graph-content">
+            <p class="graph-title">The Decision Tree</p>
+            <p class="graph-description">Now lets see how the decision tree interperets this data. First of all in the first split We can see that it classifies step counts less than 12k as school days and rest as non school days. In the right it classifies calories less than 295 are all school days so the branching stops and it classfies the rest as non school days. The main pattern that follows in this tree is that when we are working with high calories burned and high step count it always classifies it as non school days and the rest as school days. So, we can conclude it directly proves my point.</p>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+      <script src="app.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

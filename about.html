@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+  <style>
+    body {
+      opacity: 0;
+      transition: all 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-center">
+          <!--links-->
+          <div>
+            <button class="toggle-nav">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+              <li>
+                <a class="nav-link" href="index.html">home</a>
+              </li>
+             <li>
+                <a class="nav-link" href="motivation.html">Motivation</a>
+              </li>
+                          <li>
+                <a class="nav-link" href="about.html">about</a>
+              </li>
+            </ul>
+          </div>
+          <!--logo-->
+
+        </div>
+      </div>
+
+      <div class="sidebar-overlay">
+        <aside class="sidebar">
+          <button class="sidebar-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="sidebar-links">
+            <li>
+              <a href="index.html" class="sidebar-link">
+                <i class="fas fa-home fa-fw">home</i>
+              </a>
+            </li>
+            <li>
+              <a href="motivation.html" class="sidebar-link">
+                <i class="fas fa-bullhorn fa-fw">Motivation</i>
+
+              </a>
+            </li>
+                      <li>
+              <a href="about.html" class="sidebar-link">
+                <i class="fas fa-book fa-fw">about</i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <section class="section section-center about-page">
+        <div class="title">
+          <h2><span>/</span>Data Source</h2>
+        </div>
+        <p class="about-text">
+          The data source for this project is health data from my personal phone. I collected it thanks to an app in my phone that gave the csv file for all the health related data my phone stored.
+        </p>
+      </section>
+
+      <section class="section section-center about-page">
+        <div class="title">
+          <h2><span>/</span>Data Analysis</h2>
+        </div>
+        <p class="about-text">
+          Many techniques were used for this data. Firstly the data was not correctly formatted. For example there were no columns in the data. Another crucial issue with the data is that some data were missing or blank. Using scikit.learn library I put the mean of the of the column to fill the empty values. The next part is the visiluzation part. Just like the previous part many different libraries and tools were used. For example, pandas, numpy, matplotlib, plotly and scikit.learn. Many different types of graphs were formed as well such as bar charts, line plots, scatter plots, heat map, box plots and violet plots. Also to improve user experience some of the graphs are interactive so the users can play with the data. For the ML model the creation of the dataframe was a bit frustrating because I had to combine several different dataframes and the dates were mixed also some of the data was missing so dummy values had to be placed. After that I wanted to see the regression for school however because there was only two values (0 and 1) I did an logistic regression. It brought a lot of insights on the data. To further analyze the data I did an correlation heatmap and a confusion matrix. Finally to come to an conclusion I trained an decision tree model which proved my hypothesis. 
+        </p>
+      </section>
+
+      <section class="section section-center about-page">
+        <div class="title">
+          <h2><span>/</span>Findings</h2>
+        </div>
+        <p class="about-text">
+          The project has given me some mixed results but the dominant side is the fact that schoolwork effects health harmfully. This can be seen throughout the project. For example, the walking distance data from grouped by months nearly every year during spring time the distance low but by logic spring is the best time of the year to walk. Instead, the most distance I walked is when early fall and during summer. Also in the heat map we can directly see that august is the month where the blue has the darkest shape and winter or spring has the lighest blue color indicating that during these times I was the most active. Now let us review the headphones data we can see that it is in an rapid increase and this much of an increase is not good for health even though I am not sure that this is entirely schools fault but I do believe that school does play an role in it. Finally lets review the calories burned data again in here as well the maximum burn is summer and early fall same with the steps even though the quantity does not reflect the reality 100% but it gives us an correlation that during these times I have burned more calories than the times I was in school.
+        </p>
+      </section>
+
+      <section class="section section-center about-page">
+        <div class="title">
+          <h2><span>/</span>Limitations and Improvements</h2>
+        </div>
+        <p class="about-text">
+          The biggest limitation is the fact there is not that many parameters in this project definetly some more factor could have been taken into account but I do believe that I have achieved enough correlation to proved my hypothesis. Also some data parts were missing completly by that I do not mean a few days but for example most of the pandemic my data is not there so working witg an more complete that would have been nicer. The improvement for this project is definetly to improve the parameter to give an more realistic answer to this hypothesis.
+        </p>
+      </section>
+      
+          <script src="app.js"></script>
+          <script src="about.js"></script>
+</body>
+</html>
